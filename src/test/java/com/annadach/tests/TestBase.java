@@ -15,7 +15,7 @@ import static java.lang.String.format;
 
 public class TestBase {
 
-    public static CredentialsConfig credentials = ConfigFactory.create(CredentialsConfig.class);
+    public static CredentialsConfig credentials = ConfigFactory.create(CredentialsConfig.class, System.getProperties());
 
     @BeforeAll
     static void setup() {
