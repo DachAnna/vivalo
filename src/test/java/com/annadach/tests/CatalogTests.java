@@ -62,7 +62,7 @@ public class CatalogTests extends TestBase{
             catalogPage.filtersSubmit();
         });
         step("Проверяем наличие уровня Начинающий в выдаче " , () -> {
-            catalogPage.checkFilters();
+            catalogPage.checkFiltersResult();
         });
     }
 }
