@@ -61,7 +61,7 @@ public class CatalogTests extends TestBase{
         step("Нажимаем кнопку Применить" , () -> {
             catalogPage.filtersSubmit();
         });
-        step("Проверяем наличие уровня Начинаюищй в выдаче " , () -> {
+        step("Проверяем наличие уровня Начинающий в выдаче " , () -> {
             catalogPage.checkFilters();
         });
     }
