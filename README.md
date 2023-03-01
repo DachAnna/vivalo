@@ -1,46 +1,49 @@
 <a href="https://vivalo.ru/">
-    <img src="vivalo.ru/local/templates/kr/images/logo-new.svg" alt="Vivalo logo" title="Vivalo" align="left" height="130" />
+    <img src="![Vivalo logo](https://user-images.githubusercontent.com/118796374/222267315-adbb2abf-28bd-4b79-aefb-65df10c4a962.png)" alt="Vivalo logo" title="Vivalo" align="left" height="130" />
 </a>
 
 ## Проект для маркет-плейса Vivalo.ru
 
 [VlVALO](https://vivalo.ru/) – маркетплейс детских секций и развивающих центров
 
-![2023-01-23_18-46-02](https://user-images.githubusercontent.com/118747260/214087786-09b44311-0acc-479e-9be5-50260fb1d003.png)
+![Главная страница](https://user-images.githubusercontent.com/118796374/222267483-ffab1ad2-4cec-4db3-80eb-66772f12e85d.png)
 
 ## :point_right: Проект в Allure TestOps с ручными и автотестами с результатами их прохождения.
-<a target="_blank" href="https://allure.autotests.cloud/project/1830/">allure.autotests.cloud/project/1830</a>
+<a target="_blank" href="(https://allure.autotests.cloud/project/1934/)">allure.autotests.cloud/project/1934</a>
 В Allure TestOps хранится информация по всем ручным и автотестам проекта, по запускам сборок, а также отчет по пройденным сборкам.
-![2023-01-23_19-14-41](https://user-images.githubusercontent.com/118747260/214090886-fe2edafd-eae3-44f6-90b0-b559ed019c91.png)
+![Отчет Allure](https://user-images.githubusercontent.com/118796374/222268191-c619f172-c62f-4252-a0a8-a129043ea13b.png)
+
 
 ## :point_right:  Jenkins job c Allure Report с результатами пройденной сборки.
-<a target="_blank" href="https://jenkins.autotests.cloud/job/08-murugka31-ZvukSite/">jenkins.autotests.cloud/job/08-murugka31-ZvukSite</a>
+<a target="_blank" href="https://jenkins.autotests.cloud/job/08-sub_ekt-lesson13/">jenkins.autotests.cloud/job/08-sub_ekt-lesson13</a>
 В Jenkins запускается сборка с параметрами:
-* Браузер (Chrome, Opera, Firefox)
-* Разрешение браузера (2100x1080,  1920x1080,  1600x1080)
-* Версия браузера (Chrome: 99, 100; Opera: 76, 77; FireFox: 88, 89;)
+* Браузер (Chrome, Opera, Firefox, Safari)
+* Разрешение браузера (1920x1080)
+* Версия браузера (Chrome: 99)
 * Адрес удаленного браузера (selenoid.autotests.cloud/wd/hub/)
 * Выбор, какие тесты нужно проходить
     * test - выполнение всех тестов
-    * mainpage_tests - выполнение тестов для главной страницы
-    * tabpage_tests - выполнение тестов для страниц вкладок
-    * searchpage_tests - выполнение тестов для страницы с результатами поиска
-    * search_tests - выполнение тестов для страницы результатов поиска
+    * mainpagetest - выполнение тестов для главной страницы
+    * b2btest - выполнение тестов для страницы Для бизнеса
+    * catalogtest - выполнение тестов для страницы Каталог
+    * filterstest - выполнение тестов для Фильтра
 * Выбор опции параллельного прохождения тест-кейсов
 * Выбор количества тест-кейсов для параллельного запуска
 
 В Allure Report отображается вся информация по пройденной сборке
 
-![2023-01-22_18-40-14](https://user-images.githubusercontent.com/118747260/214093628-b7e2a93d-2222-4d4d-83f4-21b820a91589.png)
+![Allure Report](https://user-images.githubusercontent.com/118796374/222269137-fdaf7582-5e68-461b-a04d-6f6c3f98ba76.png)
+
 
 ## :point_right:  Jira Task с ручными и автотестами с результатами их прохождения.
-<a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-509/">jira.autotests.cloud/browse/HOMEWORK-509</a>
-![2023-01-23_19-44-54](https://user-images.githubusercontent.com/118747260/214098800-e98c6a22-f339-472d-b7ff-960b29582986.png)
+<a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-558">jira.autotests.cloud/browse/HOMEWORK-558</a>
+![Jira](https://user-images.githubusercontent.com/118796374/222269318-d9cb68e8-627e-471e-abdc-7e4c5ae931ac.png)
 
-## :point_right: Уведомления о прохождении тестов в Телеграм :v:
-Уведомления о прохождении тестов приходит в телеграм канал.
 
-https://user-images.githubusercontent.com/118747260/214099269-1882d210-c20e-4ee1-ab1b-3b3acd69961e.mp4
+## :point_right: Уведомления о прохождении тестов в Телеграмм :v:
+Уведомления о прохождении тестов приходит в телеграмм канал.
+
+![Телеграмм](https://user-images.githubusercontent.com/118796374/222269476-9e647423-8549-4592-9dfd-6078b556bf2a.png)
 
 
 ## :point_right: USAGE examples
@@ -53,7 +56,7 @@ https://user-images.githubusercontent.com/118747260/214099269-1882d210-c20e-4ee1
 * remoteUrl (selenoid.autotests.cloud/wd/hub/)
 * runTest (default test)
 * parallelRun (default true)
-* threadsNumber (default 2)
+* threadsNumber (default 1)
 
 Run tests with filled remote.properties:
 ```bash
@@ -61,10 +64,10 @@ gradle clean test
 ```
 Run certain test:
 ```bash
-gradle clean mainpage_tests
-gradle clean tabpage_tests
-gradle clean searchpage_tests
-gradle clean search_tests
+gradle clean mainpagetest
+gradle clean b2btest
+gradle clean catalogtest
+gradle clean filterstest
 ```
 Serve report:
 ```bash
@@ -73,7 +76,7 @@ allure serve build/allure-results
 
 ## :point_right: Пример прогона одного из тест-кейсов
 
-https://user-images.githubusercontent.com/118747260/215312441-7ab966c4-64cd-479e-9351-2159c098abb8.mp4
+https://selenoid.autotests.cloud/video/0454fdffbfda131643932c2c93c95276.mp4
 
 ## :point_right: Языки и инструменты
 <h3 align="left">Языки и инструменты, которые были использованы </h3>
