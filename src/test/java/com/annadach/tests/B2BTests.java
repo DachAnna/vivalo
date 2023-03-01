@@ -2,6 +2,7 @@ package com.annadach.tests;
 
 import com.annadach.pages.B2BPage;
 import io.qameta.allure.Feature;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
@@ -16,6 +17,7 @@ public class B2BTests extends TestBase {
 
     @Tag("b2btest")
     @Test
+    @DisplayName("Проверка доступности страницы для бизнеса")
     void b2bPageCheck() {
 
         //Проверка доступности страницы для бизнеса
@@ -26,6 +28,7 @@ public class B2BTests extends TestBase {
 
     @Tag("b2btest")
     @Test
+    @DisplayName("Проверка отправки формы обратной связи")
     void fillFormOrder() {
 
         step("Открываем страницу " + REPOSITORY + " для бизнеса", () -> {

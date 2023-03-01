@@ -1,7 +1,9 @@
 package com.annadach.tests;
 
 import com.annadach.pages.CatalogPage;
+import io.qameta.allure.AllureId;
 import io.qameta.allure.Feature;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
@@ -14,6 +16,7 @@ public class CatalogTests extends TestBase{
 
     @Tag("catalogtest")
     @Test
+    @DisplayName("Проверка доступности Каталога")
     void CatalogPageCheck() {
 
         step("Открываем страницу Каталог" , () -> {
@@ -23,6 +26,7 @@ public class CatalogTests extends TestBase{
 
     @Tag ("filterstest")
     @Test
+    @DisplayName("Проверка Фильров из разделов Карта и Каталог")
     void CheckFilters(){
         step("Открываем страницу Каталог" , () -> {
             catalogPage.openPage();
@@ -48,6 +52,7 @@ public class CatalogTests extends TestBase{
 
     @Tag ("filterstest")
     @Test
+    @DisplayName("Проверка работы фильтра по уровню занятий Начинающий")
     void FiltersByLevel(){
         step("Открываем страницу Каталог" , () -> {
             catalogPage.openPage();

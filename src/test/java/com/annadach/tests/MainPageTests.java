@@ -3,6 +3,7 @@ package com.annadach.tests;
 import com.annadach.pages.MainPage;
 import io.qameta.allure.AllureId;
 import io.qameta.allure.Feature;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 
 import static io.qameta.allure.Allure.step;
@@ -20,6 +21,7 @@ public class MainPageTests extends TestBase {
     @Tag("mainpagetest")
     @Test
     @AllureId("15350")
+    @DisplayName("Проверка доступности сервиса/главной страницы")
     void mainPageCheck() {
 
     //Проверка доступности сервиса/главной страницы
