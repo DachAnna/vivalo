@@ -1,5 +1,5 @@
 <a href="https://vivalo.ru/">
-    <img src="![Vivalo logo](https://user-images.githubusercontent.com/118796374/222271481-4967b149-4aad-424d-98a9-4244660beadb.png)" alt="Vivalo logo" title="Vivalo" align="left" height="130" />
+    <![Vivalo logo](https://user-images.githubusercontent.com/118796374/222272725-b8a13150-3752-4c81-b5c7-5151429e2572.png) alt="Vivalo logo" title="Vivalo" align="left" height="130" />
 </a>
 
 ## Проект для маркет-плейса Vivalo.ru
@@ -78,7 +78,7 @@ allure serve build/allure-results
 
 ## :point_right: Пример прогона одного из тест-кейсов
 
-https://selenoid.autotests.cloud/video/0454fdffbfda131643932c2c93c95276.mp4
+[![Watch the video](https://selenoid.autotests.cloud/video/0454fdffbfda131643932c2c93c95276.mp4)
 
 ## :point_right: Языки и инструменты
 <h3 align="left">Языки и инструменты, которые были использованы </h3>
