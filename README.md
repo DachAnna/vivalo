@@ -1,5 +1,5 @@
 <a href="https://vivalo.ru/">
-    <img src="![Vivalo logo](https://user-images.githubusercontent.com/118796374/222267315-adbb2abf-28bd-4b79-aefb-65df10c4a962.png)" alt="Vivalo logo" title="Vivalo" align="left" height="130" />
+    <img src="![Vivalo logo](https://user-images.githubusercontent.com/118796374/222271481-4967b149-4aad-424d-98a9-4244660beadb.png)" alt="Vivalo logo" title="Vivalo" align="left" height="130" />
 </a>
 
 ## Проект для маркет-плейса Vivalo.ru
@@ -9,13 +9,14 @@
 ![Главная страница](https://user-images.githubusercontent.com/118796374/222267483-ffab1ad2-4cec-4db3-80eb-66772f12e85d.png)
 
 ## :point_right: Проект в Allure TestOps с ручными и автотестами с результатами их прохождения.
-<a target="_blank" href="(https://allure.autotests.cloud/project/1934/)">allure.autotests.cloud/project/1934</a>
+<a target="_blank" href="(https://allure.autotests.cloud/project/1934/)">Проект в Allure TestOps</a>
+
 В Allure TestOps хранится информация по всем ручным и автотестам проекта, по запускам сборок, а также отчет по пройденным сборкам.
 ![Отчет Allure](https://user-images.githubusercontent.com/118796374/222268191-c619f172-c62f-4252-a0a8-a129043ea13b.png)
 
 
 ## :point_right:  Jenkins job c Allure Report с результатами пройденной сборки.
-<a target="_blank" href="https://jenkins.autotests.cloud/job/08-sub_ekt-lesson13/">jenkins.autotests.cloud/job/08-sub_ekt-lesson13</a>
+<a target="_blank" href="https://jenkins.autotests.cloud/job/08-sub_ekt-lesson13/">Сборка в jenkins</a>
 В Jenkins запускается сборка с параметрами:
 * Браузер (Chrome, Opera, Firefox, Safari)
 * Разрешение браузера (1920x1080)
@@ -36,7 +37,8 @@
 
 
 ## :point_right:  Jira Task с ручными и автотестами с результатами их прохождения.
-<a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-558">jira.autotests.cloud/browse/HOMEWORK-558</a>
+<a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-558">Задача в Jira c результатами автотестов</a>
+
 ![Jira](https://user-images.githubusercontent.com/118796374/222269318-d9cb68e8-627e-471e-abdc-7e4c5ae931ac.png)
 
 
