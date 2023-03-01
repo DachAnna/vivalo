@@ -1,5 +1,5 @@
 <a href="https://vivalo.ru/">
-    <![Vivalo logo](https://user-images.githubusercontent.com/118796374/222272725-b8a13150-3752-4c81-b5c7-5151429e2572.png) alt="Vivalo logo" title="Vivalo" align="left" height="130" />
+    <![Vivalo logo](https://user-images.githubusercontent.com/118796374/222272725-b8a13150-3752-4c81-b5c7-5151429e2572.png) align="left" height="130" />
 </a>
 
 ## Проект для маркет-плейса Vivalo.ru
@@ -78,10 +78,11 @@ allure serve build/allure-results
 
 ## :point_right: Пример прогона одного из тест-кейсов
 
-[![Watch the video](https://selenoid.autotests.cloud/video/0454fdffbfda131643932c2c93c95276.mp4)
+https://user-images.githubusercontent.com/118796374/222274412-d926f875-0a2e-452b-ae0e-6a8628f90bd8.mp4
+
 
 ## :point_right: Языки и инструменты
-<h3 align="left">Языки и инструменты, которые были использованы </h3>
+<h3 align="left">Языки и инструменты, используемые в данном проекте </h3>
 
 | IntelliJ IDEA | Java | Gradle | Junit5 | Selenide |
 |:------:|:----:|:----:|:------:|:------:|
@@ -91,5 +92,5 @@ allure serve build/allure-results
 |:------:|:----:|:----:|:------:|:------:|:--------:|:------:|
 | <img src="https://github.com/Roman-1990/bip-test/blob/master/img/logo/Github.png" width="40" height="40"> | <img src="https://github.com/Roman-1990/bip-test/blob/master/img/logo/Jenkins.png" width="40" height="40"> | <img src="https://github.com/Roman-1990/bip-test/blob/master/img/logo/Selenoid.png" width="40" height="40"> | <img src="https://github.com/Roman-1990/bip-test/blob/master/img/logo/Allure_Report.png" width="40" height="40"> | <img src="https://github.com/Roman-1990/bip-test/blob/master/img/logo/AllureTestOps.png" width="40" height="40"> | <img src="https://github.com/Roman-1990/bip-test/blob/master/img/logo/Telegram.png" width="40" height="40"> | <img src="https://github.com/Roman-1990/bip-test/blob/master/img/logo/Jira.png" width="40" height="40"> |
 
-:heart: <a target="_blank" href="https://github.com/murugka31">github.com/murugka31</a><br/>
+:heart: <a target="_blank" href="https://github.com/murugka31">github.com/DachAnna</a><br/>
 
