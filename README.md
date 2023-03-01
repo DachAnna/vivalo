@@ -1,10 +1,10 @@
 <a href="https://vivalo.ru/">
-    <![Vivalo logo](https://user-images.githubusercontent.com/118796374/222272725-b8a13150-3752-4c81-b5c7-5151429e2572.png) align="left" height="130">
+    <![Vivalo logo](https://user-images.githubusercontent.com/118796374/222272725-b8a13150-3752-4c81-b5c7-5151429e2572.png) align="left">
 </a>
 
 ## Проект для маркет-плейса Vivalo.ru
 
-[VlVALO](https://vivalo.ru/) – маркетплейс детских секций и развивающих центров
+[VlVALO](https://vivalo.ru/) –  онлайн-платформа для размещения услуг от центров по развитию детей в адрес родителей, которые заинтересованы в дополнительном развития ребенка. Маркет- плейс позволяет бизнесу привлекать новых клиентов из смежной сферы.
 
 ![Главная страница](https://user-images.githubusercontent.com/118796374/222267483-ffab1ad2-4cec-4db3-80eb-66772f12e85d.png)
 
