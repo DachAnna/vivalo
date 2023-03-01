@@ -1,5 +1,5 @@
 <a href="https://vivalo.ru/">
-    <![Vivalo logo](https://user-images.githubusercontent.com/118796374/222272725-b8a13150-3752-4c81-b5c7-5151429e2572.png) align="left" height="130" />
+    <![Vivalo logo](https://user-images.githubusercontent.com/118796374/222272725-b8a13150-3752-4c81-b5c7-5151429e2572.png) align="left" height="130">
 </a>
 
 ## Проект для маркет-плейса Vivalo.ru
@@ -92,5 +92,5 @@ https://user-images.githubusercontent.com/118796374/222274412-d926f875-0a2e-452b
 |:------:|:----:|:----:|:------:|:------:|:--------:|:------:|
 | <img src="https://github.com/Roman-1990/bip-test/blob/master/img/logo/Github.png" width="40" height="40"> | <img src="https://github.com/Roman-1990/bip-test/blob/master/img/logo/Jenkins.png" width="40" height="40"> | <img src="https://github.com/Roman-1990/bip-test/blob/master/img/logo/Selenoid.png" width="40" height="40"> | <img src="https://github.com/Roman-1990/bip-test/blob/master/img/logo/Allure_Report.png" width="40" height="40"> | <img src="https://github.com/Roman-1990/bip-test/blob/master/img/logo/AllureTestOps.png" width="40" height="40"> | <img src="https://github.com/Roman-1990/bip-test/blob/master/img/logo/Telegram.png" width="40" height="40"> | <img src="https://github.com/Roman-1990/bip-test/blob/master/img/logo/Jira.png" width="40" height="40"> |
 
-:heart: <a target="_blank" href="https://github.com/murugka31">github.com/DachAnna</a><br/>
+:arrow_right:: <a target="_blank" href="https://github.com/murugka31">github.com/DachAnna</a><br/>
 
