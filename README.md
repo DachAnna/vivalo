@@ -7,7 +7,7 @@
 ![Главная страница](https://user-images.githubusercontent.com/118796374/222267483-ffab1ad2-4cec-4db3-80eb-66772f12e85d.png)
 
 ## :point_right: Проект в Allure TestOps с ручными и автотестами с результатами их прохождения.
-<a target="_blank" href="(https://allure.autotests.cloud/project/1934/)">Проект в Allure TestOps</a>
+<a target="_blank" href="https://allure.autotests.cloud/project/1934/">Проект в Allure TestOps</a>
 
 В Allure TestOps хранится информация по всем ручным и автотестам проекта, по запускам сборок, а также отчет по пройденным сборкам.
 ![Отчет Allure](https://user-images.githubusercontent.com/118796374/222268191-c619f172-c62f-4252-a0a8-a129043ea13b.png)
