@@ -50,13 +50,13 @@
 
 ### Для запуска удаленных тестов необходимо заполнить remote.properties или передать значение:
 
-* browser (default chrome)
-* browserVersion (default 100.0)
-* browserSize (default 2100x1080)
+* browser (по умолчанию chrome)
+* browserVersion (по умолчанию 100.0)
+* browserSize (по умолчанию 2100x1080)
 * remoteUrl (selenoid.autotests.cloud/wd/hub/)
-* runTest (default test)
-* parallelRun (default true)
-* threadsNumber (default 1)
+* runTest (по умолчанию test)
+* parallelRun (по умолчанию true)
+* threadsNumber (по умолчанию 1)
 
 Запуск тестов с заполненным remote.properties:
 ```bash
