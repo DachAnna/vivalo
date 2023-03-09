@@ -1,7 +1,7 @@
 package com.annadach.pages;
 
-import com.annadach.tests.MainItems;
-import com.annadach.tests.MainSearchItems;
+import com.annadach.elements.MainItems;
+import com.annadach.elements.MainSearchItems;
 import com.codeborne.selenide.SelenideElement;
 
 import static com.annadach.tests.TestData.baseURL;

@@ -1,4 +1,4 @@
-package com.annadach.tests;
+package com.annadach.elements;
 
 public enum MainItems {
     ABOUT("О нас"),

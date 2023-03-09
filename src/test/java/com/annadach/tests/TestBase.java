@@ -1,6 +1,9 @@
 package com.annadach.tests;
 
 import com.annadach.helpers.Attach;
+import com.annadach.pages.B2BPage;
+import com.annadach.pages.CatalogPage;
+import com.annadach.pages.MainPage;
 import com.annadach.tests.config.CredentialsConfig;
 import com.codeborne.selenide.Configuration;
 import org.aeonbits.owner.ConfigFactory;
@@ -14,6 +17,13 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import static java.lang.String.format;
 
 public class TestBase {
+
+    MainPage mainPage = new MainPage();
+    CatalogPage catalogPage = new CatalogPage();
+    B2BPage b2BPage = new B2BPage();
+
+    protected final static String REPOSITORY_MAIN = "vivalo.ru";
+    protected final static String REPOSITORY_B2B = "Vivalo";
 
     public static CredentialsConfig credentials = ConfigFactory.create(CredentialsConfig.class, System.getProperties());
 
