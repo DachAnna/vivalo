@@ -46,9 +46,9 @@
 ![Телеграмм](https://user-images.githubusercontent.com/118796374/222269476-9e647423-8549-4592-9dfd-6078b556bf2a.png)
 
 
-## :point_right: USAGE examples
+## :point_right: Примеры использования
 
-### For run remote tests need fill remote.properties or to pass value:
+### Для запуска удаленных тестов необходимо заполнить remote.properties или передать значение:
 
 * browser (default chrome)
 * browserVersion (default 100.0)
@@ -58,18 +58,18 @@
 * parallelRun (default true)
 * threadsNumber (default 1)
 
-Run tests with filled remote.properties:
+Запуск тестов с заполненным remote.properties:
 ```bash
 gradle clean test
 ```
-Run certain test:
+Запуск определенного теста:
 ```bash
 gradle clean mainpagetest
 gradle clean b2btest
 gradle clean catalogtest
 gradle clean filterstest
 ```
-Serve report:
+Сформировать отчет:
 ```bash
 allure serve build/allure-results
 ```
