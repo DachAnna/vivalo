@@ -90,5 +90,5 @@ https://user-images.githubusercontent.com/118796374/222274412-d926f875-0a2e-452b
 |:------:|:----:|:----:|:------:|:------:|:--------:|:------:|
 | <img src="https://github.com/Roman-1990/bip-test/blob/master/img/logo/Github.png" width="40" height="40"> | <img src="https://github.com/Roman-1990/bip-test/blob/master/img/logo/Jenkins.png" width="40" height="40"> | <img src="https://github.com/Roman-1990/bip-test/blob/master/img/logo/Selenoid.png" width="40" height="40"> | <img src="https://github.com/Roman-1990/bip-test/blob/master/img/logo/Allure_Report.png" width="40" height="40"> | <img src="https://github.com/Roman-1990/bip-test/blob/master/img/logo/AllureTestOps.png" width="40" height="40"> | <img src="https://github.com/Roman-1990/bip-test/blob/master/img/logo/Telegram.png" width="40" height="40"> | <img src="https://github.com/Roman-1990/bip-test/blob/master/img/logo/Jira.png" width="40" height="40"> |
 
-:arrow_right: <a target="_blank" href="https://github.com/murugka31">github.com/DachAnna</a><br/>
+:arrow_right: <a target="_blank" href="https://github.com/DachAnna">github.com/DachAnna</a><br/>
 
