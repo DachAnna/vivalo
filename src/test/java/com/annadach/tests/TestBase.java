@@ -6,6 +6,7 @@ import com.annadach.pages.CatalogPage;
 import com.annadach.pages.MainPage;
 import com.annadach.tests.config.CredentialsConfig;
 import com.codeborne.selenide.Configuration;
+import com.google.common.collect.ImmutableMap;
 import io.restassured.RestAssured;
 import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.BeforeAll;
@@ -42,8 +43,9 @@ public class TestBase {
 
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("enableVNC", true);
-        capabilities.setCapability("enableVideo", true);
+        capabilities.setCapability("goog:chromeOptions", ImmutableMap.of("enableVNC", true, "enableVideo", true));
+        /*capabilities.setCapability("enableVNC", true);
+        capabilities.setCapability("enableVideo", true);*/
 
         Configuration.browserCapabilities = capabilities;
         Configuration.browserSize = browserSize;
