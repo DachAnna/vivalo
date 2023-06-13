@@ -23,6 +23,16 @@ public class CatalogPage {
 
     private final String SWITCH_MAP = "Карта";
     private final String SWITCH_CATALOG = "Каталог";
+    private static final String FILTER_ENDPOINT = "/local/ajax/filtr.php";
+    private static final String ENTRY_ENDPOINT = "/local/ajax/api/v1/signclasses/entry.php";
+
+    public static String getFilterEndpoint() {
+        return FILTER_ENDPOINT;
+    }
+
+    public static String getEntryEndpoint() {
+        return ENTRY_ENDPOINT;
+    }
 
     public void openPage() {
         open(baseURL);

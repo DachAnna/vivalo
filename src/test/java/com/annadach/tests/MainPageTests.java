@@ -1,21 +1,27 @@
 package com.annadach.tests;
 
+import com.annadach.allure.Layer;
 import com.annadach.elements.MainItems;
 import com.annadach.elements.MainSearchItems;
+import com.annadach.pages.MainPage;
 import io.qameta.allure.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 
+import static com.annadach.specs.Specs.*;
 import static io.qameta.allure.Allure.step;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;
+import static io.restassured.RestAssured.given;
 
 @Feature("Main page test")
 @DisplayName("Главная страница")
+@Layer("web")
 public class MainPageTests extends TestBase {
 
+    String authEndpoint = MainPage.getAuthEndpoint();
     @Tag("mainpagetest")
     @Test
     @AllureId("15350")
@@ -25,7 +31,7 @@ public class MainPageTests extends TestBase {
     void mainPageCheck() {
 
         //Проверка доступности сервиса/главной страницы
-        step("Открываем главную страницу " + REPOSITORY_MAIN, () -> {
+        step("Открыть главную страницу " + REPOSITORY_MAIN, () -> {
             mainPage.openPage();
         });
     }
@@ -37,11 +43,12 @@ public class MainPageTests extends TestBase {
     @ParameterizedTest(name = "Проверка наличия О нас, Контакты и Vivalo для бизнеса на главной : {0}")
     @Owner("Дяченко Анна Владимировна")
     @Severity(SeverityLevel.MINOR)
+    @Layer("web")
     void checkMenuItemsEnum(MainItems menuItems) {
-        step("Открываем главную страницу " + REPOSITORY_MAIN, () -> {
+        step("Открыть главную страницу " + REPOSITORY_MAIN, () -> {
             mainPage.openPage();
         });
-        step("Проверяем наличие " + menuItems.getDesc() + " на главной странице", () -> {
+        step("Проверить наличие " + menuItems.getDesc() + " на главной странице", () -> {
             mainPage.checkMenuItemsEnum(menuItems);
         });
     }
@@ -53,13 +60,38 @@ public class MainPageTests extends TestBase {
     @ParameterizedTest(name = "Проверка наличия правил поиска на главной странице : {0}")
     @Owner("Дяченко Анна Владимировна")
     @Severity(SeverityLevel.NORMAL)
+    @Layer("web")
     void MainSearchItems(MainSearchItems searchItems) {
-        step("Открываем главную страницу " + REPOSITORY_MAIN, () -> {
+        step("Открыть главную страницу " + REPOSITORY_MAIN, () -> {
             mainPage.openPage();
         });
-        step("Проверяем наличие правила поиска " + searchItems.getDesc() + " на главной странице", () -> {
+        step("Проверить наличие правила поиска " + searchItems.getDesc() + " на главной странице", () -> {
                     mainPage.checkMenuSearchEnum(searchItems);
                 }
         );
+    }
+
+    @Tag("mainpagetest")
+    @Test
+    @AllureId("23439")
+    @DisplayName("Проверка окна авторизации на главной странице")
+    @Owner("Дяченко Анна Владимировна")
+    @Severity(SeverityLevel.CRITICAL)
+    @Layer("API")
+    void mainPageCheckAuth() {
+
+        step("Открыть главную страницу " + REPOSITORY_MAIN, () -> {
+            mainPage.openPage();
+        });
+
+        step("Проверить доступности окна авторизации", () -> {
+            given().spec(request)
+                    .spec(requestWithHeader)
+                    .accept("text/html")
+                    .when()
+                    .get(authEndpoint)
+                    .then()
+                    .spec(response);
+        });
     }
 }

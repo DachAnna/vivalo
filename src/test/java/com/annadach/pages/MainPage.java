@@ -17,6 +17,11 @@ public class MainPage {
             search = $(".fltr__inner");
 
     private final String PAGE_TITLE = "Найдите центр дополнительного образования, секцию или кружок для своего ребенка всего за 5 кликов!\n";
+    private static final String AUTH_ENDPOINT = "/auth/?fancybox=true";
+
+    public static String getAuthEndpoint() {
+        return AUTH_ENDPOINT;
+    }
 
     public void openPage() {
         open(baseURL);

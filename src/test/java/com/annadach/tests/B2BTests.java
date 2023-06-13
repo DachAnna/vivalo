@@ -1,5 +1,6 @@
 package com.annadach.tests;
 
+import com.annadach.allure.Layer;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Severity;
@@ -22,10 +23,11 @@ public class B2BTests extends TestBase {
     @DisplayName("Проверка доступности страницы для бизнеса")
     @Owner("Дяченко Анна Владимировна")
     @Severity(SeverityLevel.BLOCKER)
+    @Layer("web")
     void b2bPageCheck() {
 
         //Проверка доступности страницы для бизнеса
-        step("Открываем страницу" + REPOSITORY_B2B + " для бизнеса", () -> {
+        step("Открыть страницу" + REPOSITORY_B2B + " для бизнеса", () -> {
             b2BPage.openPage();
         });
     }
@@ -35,37 +37,38 @@ public class B2BTests extends TestBase {
     @DisplayName("Проверка отправки формы обратной связи")
     @Owner("Дяченко Анна Владимировна")
     @Severity(SeverityLevel.CRITICAL)
+    @Layer("web")
     void fillFormOrder() {
 
-        step("Открываем страницу " + REPOSITORY_B2B + " для бизнеса", () -> {
+        step("Открыть страницу " + REPOSITORY_B2B + " для бизнеса", () -> {
             b2BPage.openPage();
         });
 
-        step("Нажимаем на кнопку Начать продавать на" + REPOSITORY_B2B, () -> {
+        step("Нажать на кнопку Начать продавать на" + REPOSITORY_B2B, () -> {
             b2BPage.openForm();
         });
 
         //Заполнение формы "Заказать услугу"
-        step("Заполняем поле Имя", () -> {
+        step("Заполнить поле Имя", () -> {
             b2BPage.typeName(name);
         });
-        step("Заполняем поле E-mail", () -> {
+        step("Заполнить поле E-mail", () -> {
             b2BPage.typeMail(email);
         });
-        step("Заполняем поле Телефон", () -> {
+        step("Заполнить поле Телефон", () -> {
             b2BPage.typeNumber(userNumber);
         });
-        step("Заполняем поле Сообщение", () -> {
+        step("Заполнить поле Сообщение", () -> {
             b2BPage.typeMessage(message);
         });
 
         //Отправка формы
-        step("Нажимаем на кнопку Отправить", () -> {
+        step("Нажимать на кнопку Отправить", () -> {
             b2BPage.sendForm();
         });
 
         //Проверка попаппа обратной связи
-        step("Проверяем, что форма отправилась", () -> {
+        step("Проверить, что форма отправилась", () -> {
             b2BPage.sendSuccess();
         });
     }

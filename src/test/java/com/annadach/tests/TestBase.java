@@ -6,6 +6,7 @@ import com.annadach.pages.CatalogPage;
 import com.annadach.pages.MainPage;
 import com.annadach.tests.config.CredentialsConfig;
 import com.codeborne.selenide.Configuration;
+import io.restassured.RestAssured;
 import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.BeforeAll;
 import com.codeborne.selenide.logevents.SelenideLogger;
@@ -19,16 +20,18 @@ import static java.lang.String.format;
 public class TestBase {
 
     MainPage mainPage = new MainPage();
-    CatalogPage catalogPage = new CatalogPage();
+
     B2BPage b2BPage = new B2BPage();
 
     protected final static String REPOSITORY_MAIN = "vivalo.ru";
     protected final static String REPOSITORY_B2B = "Vivalo";
+    private static final String BASE_URL = "https://vivalo.ru";
 
     public static CredentialsConfig credentials = ConfigFactory.create(CredentialsConfig.class, System.getProperties());
 
     @BeforeAll
-    static void setup() {
+    static void setUp() {
+        RestAssured.baseURI = BASE_URL;;
         String browserSize = System.getProperty("browserSize", "2100x1080");
         String browser = System.getProperty("browser", "chrome");
         String browserVersion = System.getProperty("browserVersion", "99");
