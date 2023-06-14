@@ -16,6 +16,8 @@ import org.junit.jupiter.api.AfterEach;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
 
+import java.util.Map;
+
 import static java.lang.String.format;
 
 public class TestBase {
@@ -43,7 +45,10 @@ public class TestBase {
 
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("goog:chromeOptions", ImmutableMap.of("enableVNC", true, "enableVideo", true));
+        capabilities.setCapability("selenoid:options", Map.<String, Object>of(
+                "enableVNC", true,
+                "enableVideo", true
+        ));
         /*capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);*/
 
