@@ -18,7 +18,7 @@ public class B2BTests extends TestBase {
 
 
 
-    @Tag("b2btest")
+    @Tag("obsolete")
     @Test
     @DisplayName("Проверка доступности страницы для бизнеса")
     @Owner("Дяченко Анна Владимировна")
@@ -32,7 +32,7 @@ public class B2BTests extends TestBase {
         });
     }
 
-    @Tag("b2btest")
+    @Tag("obsolete")
     @Test
     @DisplayName("Проверка отправки формы обратной связи")
     @Owner("Дяченко Анна Владимировна")

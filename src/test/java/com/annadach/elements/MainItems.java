@@ -3,7 +3,7 @@ package com.annadach.elements;
 public enum MainItems {
     ABOUT("О нас"),
     CONTACTS("Контакты"),
-    B2B("Vivalo для бизнеса");
+    B2B("Детским центрам");
 
     private String desc;
 

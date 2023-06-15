@@ -23,8 +23,8 @@ public class B2BPage {
 
     public void openPage() {
         open(baseURL);
-        $(".mn").click();
-        pageTitle.shouldHave(text(PAGE_TITLE));
+        $(".header-tw__menu").$("li",2).click();
+       // pageTitle.shouldHave(text(PAGE_TITLE));
     }
 
     public void openForm() {

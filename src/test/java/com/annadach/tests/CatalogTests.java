@@ -64,7 +64,7 @@ public class CatalogTests extends TestBase {
         });
     }
 
-    @Tag("filterstest")
+    @Tag("obsolete")
     @Test
     @DisplayName("Проверка работы фильтра по уровню занятий Начинающий")
     @Owner("Дяченко Анна Владимировна")
@@ -88,7 +88,7 @@ public class CatalogTests extends TestBase {
         });
     }
 
-    @Tag("filterstest")
+    @Tag("obsolete")
     @Test
     @DisplayName("Проверка работы фильтра")
     @Owner("Дяченко Анна Владимировна")

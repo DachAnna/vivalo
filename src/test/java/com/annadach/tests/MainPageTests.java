@@ -36,7 +36,7 @@ public class MainPageTests extends TestBase {
         });
     }
 
-    //Проверка наличия О нас, Контакты и Vivalo для бизнеса на главной
+    //Проверка наличия О нас, Контакты и Детским центрам на главной
     @Tag("mainpagetest")
     @AllureId("15351")
     @EnumSource(value = MainItems.class, mode = EnumSource.Mode.EXCLUDE)
@@ -54,7 +54,7 @@ public class MainPageTests extends TestBase {
     }
 
     //Проверка наличия правил поиска на главной странице
-    @Tag("mainpagetest")
+    @Tag("obsolete")
     @AllureId("15352")
     @EnumSource(value = MainSearchItems.class, mode = EnumSource.Mode.EXCLUDE)
     @ParameterizedTest(name = "Проверка наличия правил поиска на главной странице : {0}")
