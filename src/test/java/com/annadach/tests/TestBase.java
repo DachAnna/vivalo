@@ -6,7 +6,6 @@ import com.annadach.pages.CatalogPage;
 import com.annadach.pages.MainPage;
 import com.annadach.tests.config.CredentialsConfig;
 import com.codeborne.selenide.Configuration;
-import com.google.common.collect.ImmutableMap;
 import io.restassured.RestAssured;
 import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.BeforeAll;
@@ -23,7 +22,6 @@ import static java.lang.String.format;
 public class TestBase {
 
     MainPage mainPage = new MainPage();
-
     B2BPage b2BPage = new B2BPage();
 
     protected final static String REPOSITORY_MAIN = "vivalo.ru";
@@ -45,12 +43,12 @@ public class TestBase {
 
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("selenoid:options", Map.<String, Object>of(
+       /* capabilities.setCapability("selenoid:options", Map.<String, Object>of(
                 "enableVNC", true,
                 "enableVideo", true
-        ));
-        /*capabilities.setCapability("enableVNC", true);
-        capabilities.setCapability("enableVideo", true);*/
+        ));*/
+        capabilities.setCapability("enableVNC", true);
+        capabilities.setCapability("enableVideo", true);
 
         Configuration.browserCapabilities = capabilities;
         Configuration.browserSize = browserSize;

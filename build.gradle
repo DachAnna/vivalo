@@ -74,23 +74,23 @@ tasks.withType(Test) {
 
 }
 
-task search_tests(type: Test) {
+task b2b_tests(type: Test) {
     useJUnitPlatform {
-        includeTags "b2btest"
+        includeTags("b2btest")
     }
 }
-task searchpage_tests(type: Test) {
+task filter_tests(type: Test) {
     useJUnitPlatform {
-        includeTags "filterstest"
+        includeTags("filterstest")
     }
 }
 task mainpage_tests(type: Test) {
     useJUnitPlatform {
-        includeTags "mainpagetest"
+        includeTags("mainpagetest")
     }
-    task tabpage_tests(type: Test) {
+    task catalog_tests(type: Test) {
         useJUnitPlatform {
-            includeTags "catalogtest"
+            includeTags("catalogtest")
         }
     }
 }
